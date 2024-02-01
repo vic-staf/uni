@@ -1,4 +1,3 @@
-import math
 
 def solve(numheads, numlegs):
     if numlegs % 2 == 1:
@@ -10,5 +9,4 @@ def solve(numheads, numlegs):
         numheads -= 1
     print(f"Number of rabbits: {initial - numheads}, chickens: {numheads}")
 
-a = solve(26,96)
-print(a.solve())
+# solve(26, 96)
