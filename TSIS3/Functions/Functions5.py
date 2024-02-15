@@ -8,3 +8,4 @@ def str_permuts(string):
         print(i)
 
 # str_permuts("abc")
+        

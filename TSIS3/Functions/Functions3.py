@@ -10,3 +10,4 @@ def solve(numheads, numlegs):
     print(f"Number of rabbits: {initial - numheads}, chickens: {numheads}")
 
 # solve(26, 96)
+    
