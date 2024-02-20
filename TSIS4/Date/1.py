@@ -12,8 +12,10 @@ d3 = date.today() + timedelta(days=1)
 
 # 3
 d4 = datetime.datetime.now()
-# print(d4.strftime("%d/%m/%Y, %H:%M:%S"))
+print(d4.strftime("%d/%m/%Y, %H:%M:%S"))
 
+dd = datetime.datetime.today().replace(microsecond=0)
+print(dd)
 # 4
 d5 = datetime.datetime(year=int(input("Enter year for first date: ")),
                        month=int(input("Enter month for first date: ")),
@@ -29,4 +31,4 @@ d6 = datetime.datetime(year=int(input("Enter year for second date: ")),
                        minute=int(input("Enter minutes for second date: ")),
                        second=int(input("Enter seconds for second date: "))
                        )
-# print(f"Difference between two dates - {abs(timedelta.total_seconds(d5 - d6))} s")
+print(f"Difference between two dates - {abs(timedelta.total_seconds(d5 - d6))} s")
