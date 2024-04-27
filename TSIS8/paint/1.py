@@ -97,7 +97,7 @@ while not done:
         starty = -1
 
 
-    screen.fill(colors["Black"])
+    screen.fill(colors["White"])
 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:

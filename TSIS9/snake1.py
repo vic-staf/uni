@@ -34,6 +34,8 @@ class Snake():
         
         self.elements[0][0] += self.dx * speed
         self.elements[0][1] += self.dy * speed
+        
+        
 
     def draw(self):
         for element in self.elements:
@@ -145,13 +147,14 @@ while not done:
         pause = True
 
     if abs(x - food.x) + abs(y - food.y) < 20:
+        
         score += food.weight
         if score % 3 - food.weight < 0: 
             level += 1
             if speed > 0: speed += 1
             else: speed -= 1
-        snake.elements.append([0, 0])
-        snake.size += 1
+        snake.size -= 1
+        snake.elements.pop()
         food = Food()
 
     pygame.display.flip()

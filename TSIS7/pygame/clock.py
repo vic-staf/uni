@@ -49,9 +49,9 @@ while not done:
             pygame.quit()
 
     time = datetime.datetime.today()
-    minute = time.minute
+    minute = time.second
     seconds = time.second
-    angle1 = seconds * 6
+    angle1 = -(seconds * 6)
     angle2 = (minute * 6) + (seconds / 10)
 
    
