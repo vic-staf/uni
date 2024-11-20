@@ -55,3 +55,9 @@ LEFT JOIN employees e ON d.department_id = e.department_id;
 SELECT e.first_name, e.last_name, d.department_id, d.department_name
 FROM employees e
 LEFT JOIN departments d ON e.department_id = d.department_id;
+
+
+SELECT e.employee_id
+FROM employees e
+JOIN departments d ON e.department_id = d.department_id
+WHERE d.budget > 100;
