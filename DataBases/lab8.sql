@@ -97,5 +97,14 @@ HAVING COUNT(c.customer_id) > 1;
 CREATE ROLE intern;
 GRANT junior_dev TO intern;
 
+CREATE VIEW salesmens_orders AS
+SELECT s.name, COUNT(O.ord_no) AS orders
+FROM salesman s
+JOIN orders o  ON s.salesman_id = o.salesman_id
+GROUP BY s.name;
+
+DROP VIEW salesmens_orders;
+
+
 
 
