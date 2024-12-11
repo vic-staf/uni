@@ -165,5 +165,5 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
-SELECT complex_calculation(2, 'IT');
+SELECT complex_calculation(5, 'IT');
 
