@@ -99,7 +99,11 @@ UPDATE Books
 SET price = price + 5
 WHERE book_id = 1;
 
+BEGIN TRANSACTION ISOLATION LEVEL READ COMMITTED;
+SELECT price FROM Books WHERE book_id = 1;
+END TRANSACTION ;
 
+    
 SELECT price FROM Books WHERE book_id = 1;
 COMMIT;
 
